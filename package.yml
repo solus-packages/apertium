@@ -1,6 +1,6 @@
 name       : apertium
 version    : 3.4.2
-release    : 1
+release    : 2
 source     :
     - http://heanet.dl.sourceforge.net/project/apertium/apertium/3.4/apertium-3.4.2.tar.gz : 67b787c342cbd44d4bcafffdb5da3db265d4ce07003be21e73821c44102d7dd5
 license    : GPL-2.0
@@ -13,6 +13,6 @@ builddeps  :
 setup      : |
     %configure --disable-static
 build      : |
-    %make
+    %make -j1
 install    : |
     %make_install
